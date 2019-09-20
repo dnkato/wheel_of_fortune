@@ -12,10 +12,16 @@ namespace WheelOfFortune
         static void Main(string[] args)
         {
 
-            Game game = new Game();
-            
-            game.Start(); 
-            Console.ReadKey();
+            //Game game = new Game();
+
+            //game.Start(); 
+
+            //Console.ReadKey();
+
+            var game = new GameWorkflow();
+            //game.HardcodedPuzzle = "BLUES CLUES";
+            game.Start();
+
         }
     }
 }
