@@ -54,6 +54,20 @@ namespace WOFClassLib
             return names;
         }
 
+        public int GetNumberOfRounds()
+        {
+            bool valid = false;
+            int totalRounds;
+
+            do
+            {
+                Console.Write(" How many rounds would you like to play? ");
+                string input = Console.ReadLine();
+                valid = Int32.TryParse(input, out totalRounds) && totalRounds >= 1 ? Int32.TryParse(input, out totalRounds) : false;
+            } while (!valid);
+            return totalRounds;
+        }
+
         public char GetLetter()
         {
             bool validGuess = false;

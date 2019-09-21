@@ -18,8 +18,9 @@ namespace WheelOfFortune
 
             //Console.ReadKey();
 
+            // Replace the Game class with my refactored class...so EVIL :)
             var game = new GameWorkflow();
-            //game.HardcodedPuzzle = "BLUES CLUES";
+            
             game.Start();
 
         }

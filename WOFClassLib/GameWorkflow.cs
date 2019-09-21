@@ -80,12 +80,13 @@ namespace WOFClassLib
             ui.DisplayRoundWinner(roundWinner, players.Count);
         }
 
-        public void Start(int numberOfRounds=1)
+        public void Start()
         {
             List<string> playerNames = ui.GetPlayerNames();
 
             foreach (var name in playerNames) players.Add(new Player(name));
 
+            int numberOfRounds = ui.GetNumberOfRounds();
             for (int i = 0; i < numberOfRounds; i++)
             {
                 PlayRound();
